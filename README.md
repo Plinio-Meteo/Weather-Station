@@ -19,23 +19,25 @@ This software interacts with weather stations and it transforms the datas, gathe
   - Selezionare `Bulk-In, Interface (Interface 0)` dall'elenco
   - Assicurati che è selezionato `WinUSB` e clicca su `Replace Driver`
 - Scaricare il contenuto della repository principale del progetto
--  Estrarre il contenuto dell'archivio **[rtl_433-win.zip](https://bintray.com/chzu/dist/rtl_433#files)** nella directory `Wheater_Station_Project-master/database_relatives/`
-- Aprire la shell **CMD** da amministratore nella directory `Wheater_Station_Project-master` e dare i comandi per scaricare le dipendenze:
+-  Estrarre il contenuto dell'archivio **[rtl_433-win.zip](https://bintray.com/chzu/dist/rtl_433#files)** nella directory `Wheater_Station-master/`
+- Aprire la shell **CMD** da amministratore nella directory `Wheater_Station-master` e dare i comandi per scaricare le dipendenze:
    - Per Python3
     `pip install pandas`
     `pip install sqlite3`
+    `pip install ast`
+    `pip install json`
    - Per Nodejs
    `npm install sqlite3`
    `npm install jquery`
    `npm install chart.js`
+   `sudo npm install express`
+   `sudo npm install helmet`
  - Avviare la **cattura dei dati e creare il database**:
-    - `cd database_relatives` "*per spostarsi nella dyrectory del database*"
-    - `python3 GetDB.py` 
+    - `python3 GetDB_UPDATED.py` 
  - Aprire un **webserver locale** con i dati graficati in tempo reale:
-    - Aprire una shell **powershell** con privilegi di amministratore nella directory `Wheater_Station_Project-master`
-    - Digitare `node web_server.js`
+    - Aprire una shell nella directory `Wheater_Station-master`
+    - Digitare `node start_server.js`
  - Aprire il localhost nel browser `127.0.0.1:PORT (DEFAULT=8000)`
- - Selezionare i dati che si vogliono visualizzare e scegliere l'unità di misura del tempo
  # Guida per Linux
  - **Installare rtl-sdr:**
     - Aprire il terminale nella directory dell'utente `cd /home/"nomeutente"` e digitare:
@@ -53,22 +55,25 @@ This software interacts with weather stations and it transforms the datas, gathe
          `sudo ldconfig`
 - **Installare rtl_433:**
    - Su Debian (sid) o Ubuntu(19.10+) dare il comando:
-      - apt-get install rtl-433
+      - `apt-get install rtl-433`
    - Per le altre distribuzioni seguire questo [link](https://repology.org/project/rtl-433/versions)
 - Scaricare il contenuto della repository principale del progetto
-- Aprire un terminale nella directory `Wheater_Station_Project-master` e dare i comandi per **scaricare le dipendenze**:
+- Aprire un terminale nella directory `Wheater_Station-master` e dare i comandi per **scaricare le dipendenze**:
    - Per Python3
     `sudo pip3 install pandas`
     `sudo pip3 install sqlite3`
+    `pip install ast`
+    `pip install json`
    - Per Nodejs
    `sudo npm install sqlite3`
    `sudo npm install jquery`
    `sudo npm install chart.js`
+   `sudo npm install express`
+   `sudo npm install helmet`
  - Avviare **la cattura dei dati e creare il database**:
-    - `cd database_relatives` "*per spostarsi nella dyrectory del database*"
-    - `sudo python3 GetDB.py` 
+    - `sudo python3 GetDB_UPDATED.py` 
  - Aprire un **webserver locale** con i dati graficati in tempo reale:
-    - Aprire un terminale nella directory `Wheater_Station_Project-master` e digitare `sudo node web_server.js`
+    - Aprire un terminale nella directory `Wheater_Station-master` e digitare `sudo node start_server.js`
  - andare nella pagina del localhost nel browser `http://127.0.0.1:PORT (DEFAULT=8000)`
  - Selezionare i dati che si vogliono visualizzare e scegliere l'unità di misura del tempo
 
@@ -81,7 +86,7 @@ In the first case, please either detach or blacklist the kernel module
   - `sudo rmmod dvb_usb_rtl28xxu rtl2832`
 # Il DATABASE
 - è un SQLITE database
-- Si può trovare nella directory `Wheater_Station_Project-master/database_relatives/` con il nome `wheater_data.db`
+- Si può trovare nella directory `Wheater_Station-master` con il nome `meteo_data.db`
 - Si possono visualizzare in chiaro i dati tramite software come `DB Browser for SQLite`
 # File di configurazione
 # IL BAROMETRO
@@ -201,6 +206,18 @@ void loop(){
     
 }
 `
+
+Abbiamo scelto per il sensore BMP 180 le librerie:
+- SFE_BMP180.h
+- Wire.h
+
+Per il trasmettitore a 433 MHz abbiamo scelto le librerie:
+- RH_ASK.h
+- SPI.h
+
+NOTA BENE: l'uso di queste librerie consente solo la configurazione mostrata nella precedente figura
+-
+
 
 Abbiamo scelto per il sensore BMP 180 le librerie:
 - SFE_BMP180.h
