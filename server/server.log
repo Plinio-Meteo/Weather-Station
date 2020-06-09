@@ -1,0 +1,46 @@
+  ( REQUEST )   2020-6-9 10:44:28 from ::ffff:127.0.0.1 GET /favicon.ico
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /favicon.ico RETURN 404
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-06-09T00:00:00&end=2020-06-09T23:59:59&precision=hour&nochache=1591692280314 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-06-08T00:00:00&end=2020-06-09T00:00:00&precision=hour&nochache=1591692280375 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-06-07T00:00:00&end=2020-06-08T00:00:00&precision=hour&nochache=1591692280407 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/pressure?start=2020-06-09T00:00:00&end=2020-06-09T23:59:59&precision=hour&nochache=1591692280510 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/pressure?start=2020-06-08T00:00:00&end=2020-06-09T00:00:00&precision=hour&nochache=1591692280538 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/pressure?start=2020-06-07T00:00:00&end=2020-06-08T00:00:00&precision=hour&nochache=1591692280573 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/humidity?start=2020-06-09T00:00:00&end=2020-06-09T23:59:59&precision=hour&nochache=1591692280646 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/humidity?start=2020-06-08T00:00:00&end=2020-06-09T00:00:00&precision=hour&nochache=1591692280697 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/humidity?start=2020-06-07T00:00:00&end=2020-06-08T00:00:00&precision=hour&nochache=1591692280734 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-max?start=2020-06-09T00:00:00&end=2020-06-09T23:59:59&precision=hour&nochache=1591692280807 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-max?start=2020-06-08T00:00:00&end=2020-06-09T00:00:00&precision=hour&nochache=1591692280831 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-max?start=2020-06-07T00:00:00&end=2020-06-08T00:00:00&precision=hour&nochache=1591692280848 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-avg?start=2020-06-09T00:00:00&end=2020-06-09T23:59:59&precision=hour&nochache=1591692280900 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-avg?start=2020-06-08T00:00:00&end=2020-06-09T00:00:00&precision=hour&nochache=1591692280918 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-avg?start=2020-06-07T00:00:00&end=2020-06-08T00:00:00&precision=hour&nochache=1591692280938 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-dir?start=2020-06-09T00:00:00&end=2020-06-09T23:59:59&precision=hour&nochache=1591692280985 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-dir?start=2020-06-08T00:00:00&end=2020-06-09T00:00:00&precision=hour&nochache=1591692281002 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/wind-dir?start=2020-06-07T00:00:00&end=2020-06-08T00:00:00&precision=hour&nochache=1591692281013 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-04-02T00:00:00&end=2020-06-07T23:59:59&precision=day&nocache=1591692291780 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-04-02T00:00:00&end=2020-06-07T23:59:59&precision=day&nocache=1591692312710 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-02T00:00:00&end=2020-06-07T23:59:59&precision=day&nocache=1591692325893 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-03-02T00:00:00&end=2020-06-03T23:59:59&precision=month&nocache=1591692346778 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-03-02T00:00:00&end=2020-07-03T23:59:59&precision=month&nocache=1591692351174 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-04-02T00:00:00&end=2020-07-03T23:59:59&precision=month&nocache=1591692353644 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-02T00:00:00&end=2020-07-03T23:59:59&precision=day&nocache=1591692355757 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?from=2020-05-29T00:00:00&end=2020-06-03T23:00:00 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-29T00:00:00&end=2020-06-03T23:00:00 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-29T00:00:00&end=2020-06-03T23:00:00 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-29T00:00:00&end=2020-06-03T23:00:00 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-29T00:00:00&end=2020-06-03T23:00:00 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-29T00:00:00&end=2020-06-03T23:00:00 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-29T00:00:00&end=2020-06-03T23:00:00 RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-29T00:00:00&end=2020-06-03T23:00:00&precision=month RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-18T00:00:00&end=2020-06-03T23:00:00&precision=month RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-18T00:00:00&end=2020-06-03T23:00:00&precision=day RETURN 500
+ ( NOT FOUND )  2020-6-9 10:44:28 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-18T00:00:00&end=2020-06-03T23:00:00&precision=hour RETURN 500
+ ( NOT FOUND )  2020-6-9 11:3:31 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-18T00:00:00&end=2020-06-03T23:00:00&precision=hour RETURN 500
+ ( NOT FOUND )  2020-6-9 11:4:37 ::ffff:127.0.0.1 GET /data/temperature?start=2020-05-18T00:00:00&end=2020-06-03T23:00:00&precision=hour RETURN 500
+ [  SEVERE   ]  2020-6-9 11:6:52  Error while preparing the query: SELECT * FROM Temperature WHERE undefined SQLITE_ERROR: no such column: undefined
+ [  SEVERE   ]  2020-6-9 11:8:21  Error while preparing the query: SELECT * FROM Temperature WHERE undefined SQLITE_ERROR: no such column: undefined
+ [  SEVERE   ]  2020-6-9 11:10:19  Error while preparing the query: SELECT * FROM Temperature WHERE undefined SQLITE_ERROR: no such column: undefined
+ [  SEVERE   ]  2020-6-9 11:11:19  Error while preparing the query: SELECT * FROM Temperature WHERE undefined SQLITE_ERROR: no such column: undefined
+ [  SEVERE   ]  2020-6-9 11:11:19  Error while preparing the query: SELECT * FROM Temperature WHERE undefined SQLITE_ERROR: no such column: undefined
+ [  SEVERE   ]  2020-6-9 11:15:13 Error while parsing parameters: /temperature?start=2020-05-18T00:00:00&end=2020-06-03T23:00:00&precision=hour

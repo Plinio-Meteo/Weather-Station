@@ -1,0 +1,59 @@
+{
+    "port": 8000,
+    "database": "../meteo_data.db",
+    "https": false,
+    "https_ca": "csr.pem",
+    "https_key": "key.pem",
+    "https_certificate": "cert.pem",
+
+    "request_modules": [{
+        "path": "/temperature",
+        "table": "Temperature",
+        "column": "temperature_C",
+        "unit": "C°",
+        "max": 100,
+        "min": -20
+    },{
+        "path": "/pressure",
+        "table": "Pressure",
+        "column": "pressure_hPa",
+        "unit": "hPa",
+        "max": 300,
+        "min": 0
+    },{
+        "path": "/humidity",
+        "table": "Humidity",
+        "column": "humidity",
+        "unit": "g/m^3",
+        "max": 100,
+        "min": 0
+    },{
+        "path": "/wind-max",
+        "table": "Wind",
+        "column": "wind_max_m_s",
+        "unit": "km/h",
+        "max": 100,
+        "min": 0
+    },{
+        "path": "/wind-avg",
+        "table": "Wind",
+        "column": "wind_avg_m_s",
+        "unit": "km/h",
+        "max": 50,
+        "min": 0
+    },{
+        "path": "/wind-dir",
+        "table": "Wind",
+        "column": "wind_dir_deg",
+        "unit": "degrees",
+        "max": 360,
+        "min": 0
+    }],
+
+    "sensors":[
+        "Oregon-v1",
+        "Oregon-WGR800",
+        "Oregon-THGR810",
+        "RadioHead-ASK"
+    ]
+}
