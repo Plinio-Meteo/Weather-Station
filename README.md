@@ -4,7 +4,7 @@ This software interacts with weather stations and it transforms the datas, gathe
 **HARDWARE**
 - Windows o Linux
 - [Un dongle SDR compatibile](https://github.com/merbanan/rtl_433/blob/master/docs/HARDWARE.md), testato su chipset [`Realtek RTL2832`](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
-- Sensori meteo che rilevano i dati e trasmettono sui 433MHz, [qui una lista](file:///C:/Users/mY/Desktop/progetto/Supported%20device.md)
+- Sensori meteo che rilevano i dati e trasmettono sui 433MHz, [qui una lista](https://github.com/Plinio-Meteo/Weather-Station/blob/master/Supported_Devices.md)
 
 **SOFTWARE**
 - [RTL_433](https://github.com/merbanan/rtl_433/)
