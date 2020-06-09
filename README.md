@@ -1,10 +1,10 @@
-# Weather-Station
-This software interacts with weather stations and it transforms the datas, gathered by 'rtl_433' , paired with a SDR, into graphs on a web server
-# Requisiti
+# Wheater_Station_Project
+This software interacts with weather stations and it transforms the data, gathered by 'rtl_433' , paired with a SDR, into graphs on a web server
+# Requirements
 **HARDWARE**
 - Windows o Linux
-- [Un dongle SDR compatibile](https://github.com/merbanan/rtl_433/blob/master/docs/HARDWARE.md), testato su chipset [`Realtek RTL2832`](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
-- Sensori meteo che rilevano i dati e trasmettono sui 433MHz, [qui una lista](https://github.com/Plinio-Meteo/Weather-Station/blob/master/Supported_Devices.md)
+- [A compatible dongle SDR](https://github.com/merbanan/rtl_433/blob/master/docs/HARDWARE.md), testated on chipset [`Realtek RTL2832`](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
+- Weather  sensors that detect the datas and transmit them to 433MHz, [here a list of compatible sensors](file:///C:/Users/mY/Desktop/progetto/Supported%20device.md)
 
 **SOFTWARE**
 - [RTL_433](https://github.com/merbanan/rtl_433/)
@@ -12,35 +12,35 @@ This software interacts with weather stations and it transforms the datas, gathe
 - [Nodejs (con npm)](https://nodejs.org/it/)
 - [Zadig](https://github.com/pbatard/libwdi/wiki/Zadig) (solo per Windows)
 - rtl-sdr (solo per linux)
-# Guida per Windows
-- Collegare il dongle SDR ed installare il **driver universale**:
-  - Eseguire [Zadig](https://zadig.akeo.ie/) come amministratore
-  - andare su `options` e selezionare `List All Devices`
-  - Selezionare `Bulk-In, Interface (Interface 0)` dall'elenco
-  - Assicurati che è selezionato `WinUSB` e clicca su `Replace Driver`
-- Scaricare il contenuto della repository principale del progetto
--  Estrarre il contenuto dell'archivio **[rtl_433-win.zip](https://bintray.com/chzu/dist/rtl_433#files)** nella directory `Wheater_Station-master/`
-- Aprire la shell **CMD** da amministratore nella directory `Wheater_Station-master` e dare i comandi per scaricare le dipendenze:
-   - Per Python3
+# Guide for Windows
+- Connect the dongle SDR and install a **universal driver**:
+  - run [Zadig](https://zadig.akeo.ie/) as administrator
+  - go to `options` e select `List All Devices`
+  - Select `Bulk-In, Interface (Interface 0)` from the list
+  - Be sure that `WinUSB`is selected and click on `Replace Driver`
+- Download the content of the main repository of the projetc.
+-  Estract the content of archive**[rtl_433-win.zip](https://bintray.com/chzu/dist/rtl_433#files)** into the Weather_Station-master/`
+- Open the shell **CMD** as administrator into `Wheater_Station-master` directory e give directions to download the dependences:
+   - For Python3
     `pip install pandas`
     `pip install sqlite3`
     `pip install ast`
     `pip install json`
-   - Per Nodejs
+   - For Nodejs
    `npm install sqlite3`
    `npm install jquery`
    `npm install chart.js`
    `sudo npm install express`
    `sudo npm install helmet`
- - Avviare la **cattura dei dati e creare il database**:
+ - Run **the capture of the data and create the database**:
     - `python3 GetDB_UPDATED.py` 
- - Aprire un **webserver locale** con i dati graficati in tempo reale:
-    - Aprire una shell nella directory `Wheater_Station-master`
-    - Digitare `node start_server.js`
- - Aprire il localhost nel browser `127.0.0.1:PORT (DEFAULT=8000)`
- # Guida per Linux
- - **Installare rtl-sdr:**
-    - Aprire il terminale nella directory dell'utente `cd /home/"nomeutente"` e digitare:
+ - Open a **local webserver**:
+    - Open a shell into `Wheater_Station-master` directory
+    - Type `node start_server.js`
+ - Open localhost in the browser `127.0.0.1:PORT (DEFAULT=8000)`
+ # Guide for Linux
+ - **Install rtl-sdr:**
+    - Open terminal into user directory `cd /home/"nomeutente"` and type:
        - `sudo apt-get update`
          `sudo apt-get install rtl-sdr`
          `sudo apt-get install libusb-1.0-0-dev git cmake`
@@ -53,85 +53,84 @@ This software interacts with weather stations and it transforms the datas, gathe
          `sudo make install`
          `sudo cp ../rtl-sdr.rules /etc/udev/rules.d/`
          `sudo ldconfig`
-- **Installare rtl_433:**
-   - Su Debian (sid) o Ubuntu(19.10+) dare il comando:
+- **Install rtl_433:**
+   - on Debian (sid) or Ubuntu(19.10+) give direction:
       - `apt-get install rtl-433`
-   - Per le altre distribuzioni seguire questo [link](https://repology.org/project/rtl-433/versions)
-- Scaricare il contenuto della repository principale del progetto
-- Aprire un terminale nella directory `Wheater_Station-master` e dare i comandi per **scaricare le dipendenze**:
-   - Per Python3
+   - For the other distributions follow this [link](https://repology.org/project/rtl-433/versions)
+- Dowload the content of the main repository of the project
+- Open terminal into `Wheater_Station-master` directory and give directions to **download dependences**:
+   - For Python3
     `sudo pip3 install pandas`
     `sudo pip3 install sqlite3`
-    `pip install ast`
-    `pip install json`
-   - Per Nodejs
+    `sudo pip install ast`
+    `sudo pip install json`
+   - ForNodejs
    `sudo npm install sqlite3`
    `sudo npm install jquery`
    `sudo npm install chart.js`
    `sudo npm install express`
    `sudo npm install helmet`
- - Avviare **la cattura dei dati e creare il database**:
+ - Run **the capture of the data and create the database**:
     - `sudo python3 GetDB_UPDATED.py` 
- - Aprire un **webserver locale** con i dati graficati in tempo reale:
-    - Aprire un terminale nella directory `Wheater_Station-master` e digitare `sudo node start_server.js`
- - andare nella pagina del localhost nel browser `http://127.0.0.1:PORT (DEFAULT=8000)`
- - Selezionare i dati che si vogliono visualizzare e scegliere l'unità di misura del tempo
+ - Open **a local webserver** :
+    - Open a terminal into `Wheater_Station-master` directory and digit `sudo node start_server.js`
+ - Go to localhost in the browser `http://127.0.0.1:PORT (DEFAULT=8000)`
+ - Select the data that you want to display and choose unit of measure of the time
 
-- Se vedi questo **errore**:
+- if you see this **error**:
 `"Kernel driver is active, or device is claimed by second instance of librtlsdr.
 In the first case, please either detach or blacklist the kernel module
 (dvb_usb_rtl28xxu), or enable automatic detaching at compile time."`
-- Prova a risolvere con questi comandi:
+- Try to solve it with these commands:
   - `sudo tee --append /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf`
   - `sudo rmmod dvb_usb_rtl28xxu rtl2832`
-# Il DATABASE
-- è un SQLITE database
-- Si può trovare nella directory `Wheater_Station-master` con il nome `meteo_data.db`
-- Si possono visualizzare in chiaro i dati tramite software come `DB Browser for SQLite`
-# File di configurazione
-# IL BAROMETRO
-Il barometro è stato realizzato con arduino. 
+# THE DATABASE
+- it is a SQLITE database
+- You can find it into `Wheater_Station-master` directory with a name `meteo_data.db`
+- You can dispay the clean data through software like `DB Browser for SQLite`
+# Configuration file
+# THE BAROMETER
+The barometer is realized with arduino. 
+we built the barometer so that it could fulfill to assignments:
 
-Abbiamo costruito il barometro in modo tale che compiesse due compiti:
-1. Catturare i dati relativi alla pressione nell'area di installazione 
-2. Inviare i dati catturati sulla frequenza 433 MHz
+1. To capture the data of the pressure in the area
+2. To send the captured data on the 433 MHz frequency
 
-Per la realizzazione abbiamo utilizzato:
-- ARDUINO UNO REV 3 (oppure Elegoo UNO R3)
+For the realization we used:
+- ARDUINO UNO REV 3 (or Elegoo UNO R3)
 - ADAFRUIT BMP180 Barometric Sensor (https://www.amazon.it/AZDelivery-elettrico-pressione-atmosferica-Raspberry/dp/B07D8S617X)
 - AZDelivery 433 MHz Wireless Transmitter (https://www.amazon.it/AZDelivery-433-MHz-Funk-trasmettitore/dp/B076KN7GNB/)
+With the choice of these componets we achived to obtain the data of the pressure with optimum precision and to sent them without the lost of signal in a range of about 4,5 m.
 
-Con la scelta di questi componenti siamo riusciti ad ottenere i dati della pressione con un'ottima precisione ed inviarli senza perdita di segnale in un range di circa 4,50 m.
-
-La seguente immagine mostra lo schema di costruzione:
+The following picture shows the scheme of costruction:
 ![e426d3eb46c5e859b8e24e5aa81fb722.png](:/3fa5f540037f487fbb255c5f71f7d0cd)
 
-Per la programmazione dell'Arduino abbiamo usato il seguente codice:
+For the programming of the Arduino, we used the following code:
 
 `
-// Librerie per il Barometro
+// Libraries for Barometer
 #include <SFE_BMP180.h>
 #include <Wire.h>
-// Librerie per l'antenna a 433.39 Mhz
+// Libraries for the antenna 433.39 Mhz
 #include <RH_ASK.h>
 #include <SPI.h>
 
-// Questo va verficato sperimentalmente (ma in media 5.0/6.0 va bene)
+// This as to be experimentally verified (but the average of 5.0/6.0 is good)
 float x_calibrazione  = 5.0;
 
-// Creo l'oggeto per richiamare il Barometro e lo imposto sul setup standard
+// I create the object to interact with the Barometer and set it with standard setup
 SFE_BMP180 BMP;
 
-// Creo l'oggeto per richiamare l'antenna e la imposto sul setup standard
+// I create the object to interact with the antenna and set it with standard setup
 RH_ASK driver;
 
 
 void setup(){
   
-    // Inizializzo porta seriale a 9600 Baud per il debugging
+    // I inizialized serial port 9600 Baud for the debugging
     Serial.begin(9600);
 
-    // Inizializzo il barometro e avvio l'antenna
+    // I inizialized the barometer and run antenna
     BMP.begin();
     driver.init();
     
@@ -145,37 +144,33 @@ void loop(){
 
     status = BMP.startTemperature();
     if(status != 0){
-      // Attendo che la misurazione sia completa 
+      // I wait that the measurement is completed 
       delay(status);
 
-      // Raccolgo il valore della misurazione e lo metto nella varibile T
-      // Se l'operazione ha succeso questa funzione restituisce 1, se avviene
-      // diversamente la funzione restituisce 0
-      // T è necessario per calcolare la pressione
+      // I pick up the value of the measurement and save it in the T variable
+      // if the operation  has succeded this function returns 1, if it goas in a different way, the function returns 0
+
+      // T is necessary to calculate the pressure
 
       status = BMP.getTemperature(T);
       if(status != 0){
 
-        // Comincio la misurazione della pressione assoluta
-        // uso l'opzione 3 per avere la misurazione più lunga
-        // e quindi la più accurata possibile
-        // Per il resto funzione esattamenete come quella della temperatura
+        // Begin the mensurement of absolute pressure
+        // I use the third option to have more accurate value
 
         status = BMP.startPressure(3);
         if(status != 0){
           
-          // Attendo che la misurazione sia completa
+          // I wait that the measurement is completed
           delay(status);
 
-          // Raccolgo il valore della misurazione e lo metto nella varibile P
-          // (questa funzione richiede per funzione anche T)
-          // Se l'operazione ha succeso questa funzione restituisce 1, se avviene
-          // diversamente la funzione restituisce 0
+          //  pick up the value of the measurement and save it in the P variable
+    	// if the operation  has succeded this function returns 1, if it goas in a different way, the function returns 0
 
           status = BMP.getPressure(P, T);
           if(status != 0){
             
-            // Metto la pressione nella seconda parte del payload da tramsettere
+            // I put pressure in the second part of the payload
             
             String pressure = "";
             float p = int(P) + x_calibrazione;
@@ -184,7 +179,7 @@ void loop(){
             String temperature = "";
             temperature = "'temperature_C' : " + String(T);
             
-            // Compongo il payload e lo mando sulla frequenza 433.39 Mhz
+            // I assembly the payload and give it on 433.39 Mhz frequency
             String to_send = "";
             to_send = "{" + pressure +","+ temperature + "}";
             const char *msg = to_send.c_str();
@@ -207,25 +202,13 @@ void loop(){
 }
 `
 
-Abbiamo scelto per il sensore BMP 180 le librerie:
+We chosed for the sensor "BMP 180" these libraries:
 - SFE_BMP180.h
 - Wire.h
 
-Per il trasmettitore a 433 MHz abbiamo scelto le librerie:
+We chosed for the trasmitter 433Mhz these libraries:
 - RH_ASK.h
 - SPI.h
 
-NOTA BENE: l'uso di queste librerie consente solo la configurazione mostrata nella precedente figura
--
-
-
-Abbiamo scelto per il sensore BMP 180 le librerie:
-- SFE_BMP180.h
-- Wire.h
-
-Per il trasmettitore a 433 MHz abbiamo scelto le librerie:
-- RH_ASK.h
-- SPI.h
-
-NOTA BENE: l'uso di queste librerie consente solo la configurazione mostrata nella precedente figura
+BE CAREFUL: these libraries can only be used with the configuration shown in the previous picture.
 -
