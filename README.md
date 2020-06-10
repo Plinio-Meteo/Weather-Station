@@ -2,16 +2,16 @@
 This software interacts with weather stations and it transforms the data, gathered by 'rtl_433' , paired with a SDR, into graphs on a web server
 # Requirements
 **HARDWARE**
-- Windows o Linux
+- Windows or Linux
 - [A compatible dongle SDR](https://github.com/merbanan/rtl_433/blob/master/docs/HARDWARE.md), testated on chipset [`Realtek RTL2832`](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
-- Weather  sensors that detect the data and transmit them to 433MHz, [here a list of compatible sensors](file:///C:/Users/mY/Desktop/progetto/Supported%20device.md)
+- Weather  sensors that detect the data and transmit them to 433MHz, [here a list of compatible sensors](https://github.com/Plinio-Meteo/Weather-Station/blob/master/Supported_Devices.md)
 
 **SOFTWARE**
 - [RTL_433](https://github.com/merbanan/rtl_433/)
 - [Python3](https://www.python.it/)
 - [Nodejs (con npm)](https://nodejs.org/it/)
-- [Zadig](https://github.com/pbatard/libwdi/wiki/Zadig) (solo per Windows)
-- rtl-sdr (solo per linux)
+- [Zadig](https://github.com/pbatard/libwdi/wiki/Zadig) (only for Windows)
+- rtl-sdr (only for linux)
 # Guide for Windows
 - Connect the dongle SDR and install a **universal driver**:
   - run [Zadig](https://zadig.akeo.ie/) as administrator
