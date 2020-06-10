@@ -24,7 +24,7 @@
         "path": "/humidity",
         "table": "Humidity",
         "column": "humidity",
-        "unit": "g/m^3",
+        "unit": "%",
         "max": 100,
         "min": 0
     },{
