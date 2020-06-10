@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="chart_lib.js"></script>
+        <script type="text/javascript" src="/moment.min.js"></script>
+        <script type="text/javascript" src="/navbar.js"></script>
+        <link rel="stylesheet" type="text/css" href="seasons.css"/>
+    </head>
+    
+    <body>
+
+        <div class="topnav" id="navbar">
+            <a class="active" href="/index.html"> Meteo Project Plinio</a>
+            <a href="/realtime.html"> Realtime charts</a>
+            <a href="/chart.html"> Visualize and download</a>
+            <a href="https://github.com" style="float: right;"><img class="logo" src="GitHub-Mark.png">Github</a>
+        </div>
+    
+        <div class="graphDiv">
+            
+            <div class="graphLine">
+                <div id="data0" class="data_intime"></div>
+                <canvas id="Chart1" width="425" height="300"></canvas>
+            </div>
+    
+       
+            <div class="graphLine">
+                <div id="data1" class="data_intime"></div>
+                <canvas id="Chart2" width="425" height="300"></canvas>
+            </div>
+            
+            <div class="graphLine">
+                <div id="data2" class="data_intime"></div>
+                <canvas id="Chart3" width="425" height="300"></canvas>
+            </div>
+            
+        </div>
+        
+        <div class="graphDiv">
+            
+            <div class="graphLine">
+                <div id="data3" class="data_intime"></div>
+                <canvas id="Chart4" width="425" height="300"></canvas>
+            </div>
+        
+            <div class="graphLine">
+                <div id="data4" class="data_intime"></div>
+                <canvas id="Chart5" width="425" height="300"></canvas>
+            </div>
+            
+            <div class="graphLine">
+                <div id="data5" class="data_intime"></div>
+                <canvas id="Chart6" width="425" height="300"></canvas>
+            </div>
+        
+        </div>
+        
+    </body>
+    
+    <script src="/Chart.min.js"></script>
+    <script type="text/javascript" src="/jquery-3.5.1.js"></script>
+    <script src="/realtime_charts.js"></script>
+</html>
