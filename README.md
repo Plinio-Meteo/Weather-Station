@@ -1,5 +1,6 @@
 # Wheater_Station_Project
 This software interacts with weather stations and it transforms the data, gathered by 'rtl_433' , paired with a SDR, into graphs on a web server
+[![Known Vulnerabilities](https://snyk.io/test/github/Plinio-Meteo/Weather-Station/badge.svg?targetFile=server/database_relatives/package.json)](https://snyk.io/test/github/Plinio-Meteo/Weather-Station?targetFile=server/database_relatives/package.json)
 # Requirements
 **HARDWARE**
 - Windows or Linux
